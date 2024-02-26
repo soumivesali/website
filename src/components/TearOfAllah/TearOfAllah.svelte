@@ -3,6 +3,8 @@
 	import { linear as easing } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 	import { interpolateString } from 'd3-interpolate';
+	import { onMount } from 'svelte';
+	import { animate } from 'motion';
 
 	let selectedPath = tearDrop;
 	function select(path: string) {
@@ -16,6 +18,17 @@
 	});
 	$: animated_path.set(selectedPath);
 	select(circle);
+	onMount(() => {
+		animate(
+			'.box',
+			{ position: 'relative', top: '40vh', left: '20vw' },
+			{
+				duration: 7,
+				easing: 'ease-in-out',
+				direction: 'alternate'
+			}
+		);
+	});
 </script>
 
 <div class="box">

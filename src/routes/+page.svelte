@@ -1,18 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { animate } from 'motion';
 	import TearOfAllah from '../components/TearOfAllah/TearOfAllah.svelte';
-	onMount(() => {
-		animate(
-			'.box',
-			{ position: 'relative', top: '40vh', left: '20vw' },
-			{
-				duration: 7,
-				easing: 'ease-in-out',
-				direction: 'alternate'
-			}
-		);
-	});
 </script>
 
 <div>
