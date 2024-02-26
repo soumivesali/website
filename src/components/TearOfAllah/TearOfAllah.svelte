@@ -20,7 +20,7 @@
 
 <div class="box">
 	<svg>
-		<path d={$animated_path} fill="none" stroke="white" />
+		<path d={$animated_path} fill="white" stroke="white" />
 	</svg>
 </div>
 
@@ -34,7 +34,7 @@
 	}
 	.box {
 		position: relative;
-		top: 10vh;
+		top: calc(0vh - 60px);
 		left: 20vw;
 		background-color: rgba(255, 255, 255, 0.01);
 		width: 10vh;

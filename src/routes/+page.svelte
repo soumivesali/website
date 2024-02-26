@@ -7,7 +7,7 @@
 			'.box',
 			{ position: 'relative', top: '40vh', left: '20vw' },
 			{
-				duration: 5,
+				duration: 7,
 				easing: 'ease-in-out',
 				direction: 'alternate'
 			}
