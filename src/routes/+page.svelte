@@ -2,6 +2,9 @@
 	import TearOfAllah from '../components/TearOfAllah/TearOfAllah.svelte';
 </script>
 
+<svelte:head>
+	<title>Nokhte</title>
+</svelte:head>
 <div>
 	<TearOfAllah />
 </div>
