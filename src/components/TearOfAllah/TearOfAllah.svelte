@@ -12,8 +12,8 @@
 	}
 	let animated_path = tweened(tearDrop, {
 		interpolate: interpolateString,
-		delay: 1000,
-		duration: 2000,
+		delay: 2000,
+		duration: 2500,
 		easing
 	});
 	$: animated_path.set(selectedPath);
