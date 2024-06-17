@@ -12,8 +12,8 @@
 	}
 	let animated_path = tweened(tearDrop, {
 		interpolate: interpolateString,
-		delay: 2000,
-		duration: 2500,
+		delay: 3250,
+		duration: 3000,
 		easing
 	});
 	$: animated_path.set(selectedPath);
@@ -21,9 +21,9 @@
 	onMount(() => {
 		animate(
 			'.box',
-			{ position: 'relative', top: '40vh', left: '20vw' },
+			{ position: 'relative', top: '45vh', left: '50vw' },
 			{
-				duration: 7,
+				duration: 5,
 				easing: 'ease-in-out',
 				direction: 'alternate'
 			}
@@ -48,7 +48,7 @@
 	.box {
 		position: relative;
 		top: calc(0vh - 60px);
-		left: 20vw;
+		left: 50vw;
 		background-color: rgba(255, 255, 255, 0.01);
 		width: 10vh;
 		height: 10vh;
